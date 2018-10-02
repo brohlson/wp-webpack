@@ -4,6 +4,8 @@
   "description": "A WordPress starter theme.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --watch",
     "eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
