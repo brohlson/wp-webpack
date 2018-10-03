@@ -8,5 +8,19 @@ module.exports = {
     filename: 'bundle.js'
   },
   mode: 'development',
-  devtool: 'cheap-eval-source-map'
+  devtool: 'cheap-eval-source-map',
+  module: {
+    rules: [
+      {
+        enforce: 'pre',
+        exclude: /node_modules/,
+        test: /\.jsx$/,
+        loader: 'eslint-loader'
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader'
+      }
+    ]
+  }
 };
