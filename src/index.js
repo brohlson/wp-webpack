@@ -1,3 +1,2 @@
-console.log('hello world'); // eslint-disable-line no-console
-
-console.log('world says hello'); // eslint-disable-line no-console
+import './js/navigation';
+import './js/skip-link-focus-fix';
